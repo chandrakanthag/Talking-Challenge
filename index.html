@@ -15,6 +15,7 @@
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+       
         /* Custom styles for the card click effect */
         .card {
             transition: all 0.2s ease-in-out;
@@ -78,6 +79,18 @@
         padding-top: 0.1rem !important;
         padding-bottom: 2.5rem;
         }
+         @media (max-width: 768px) {
+        .HID{
+            display: none;
+            }
+        .gif{
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            justify-content: center;                
+            align-items: center;
+            }
+        }
     </style>
     <script>
         tailwind.config = {
@@ -102,8 +115,10 @@
     <header class="text-center py-6 md:py-10 H">
         <h1 class="text-3xl md:text-5xl font-extrabold text-primary gif">
             2-Minute Talking Challenge (BCE317)
+            <span class="HID">
            <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
 <dotlottie-wc src="https://lottie.host/d27f6fef-4ed9-4e93-b995-5e3953f8ca35/8tvifzcTdA.lottie" speed="0.5" style="width: 170px; height: auto" mode="forward" loop autoplay></dotlottie-wc>
+            </span>
         </h1>
         <p class="text-gray-600 mt-2 text-lg"><b>Batch Trainer: Anjana Ma'am | Coordinator: Chandrakanth A G | <a href="https://chandrakanthag.github.io/CHANDRAKANTH-A-G/" class="name"> View Profile</a></b></p> 
         <p class="reveal mt-2 text-lg ">Click a card to reveal your topic!</p>
